@@ -1,0 +1,253 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 30px;
+    font-family: Helvetica;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px #000;
+}
+
+header h1 span {
+    color: #4decff;
+    font-weight: bold;
+}
+
+nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+nav a {
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #4decff;
+}
+
+/*
+ * Select the new section we created.
+ * Give the element full width and 600px height.
+ */
+.top-section {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-position-y: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features {
+    width: 50%;
+    height: 250px;
+    background-color: #4decff;
+    display: flex;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 100%;
+    color: #fff;
+}
+
+.features div:first-child {
+    background-color: #262626;
+}
+
+.features img {
+    width: 30%;
+}
+
+.features h1 {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Helvetica;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+.description img {
+    width: 45%;
+    box-shadow: 0px 0px 5px 0px #000; 
+}
+
+.description {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #262626;
+    font-family: Helvetica;
+}
+
+.description h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.description p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0 0 0;
+}
+
+.description p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.description div {
+    width: calc(50% - 5%);
+}
+
+.description p span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.signup {
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: 0 -80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.signup form {
+    
+    height: calc(100%-200px);
+    width: calc(40%-100px);
+    background-color: #fff;
+    margin: 50px 50px 50px 0px;
+    padding: 50px 50px 50px 50px;
+    font-family: Helvetica;
+}
+#signup-name, #signup-email  {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+}
+.signup input[type="submit"]{
+    margin: 10px 0px 0px 0px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: #4decff;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    letter-spacing: 1px;
+
+    box-shadow: 0px 0px 3px #aaaaaa;
+
+float: right;
+}
+footer {
+    margin-top: 100px;
+    background-color: #262626;
+    height: 40px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .contact {
+    margin-right: 30px;
+    font-family: Helvetica;
+    color:#fff ;
+    font-size: 12px; 
+}
+.signup label:not(.radio-label) {
+    font-weight: bold;
+    margin-bottom: 10px ;
+    display: inline-block;
+}
+.courses {
+margin-top: 150px;
+width: 100%;
+height: 300px;
+display: flex;
+justify-content: space-between;
+
+}
+.courses table {
+    
+    width: 50%;
+    height: 100%;
+    font-family: Helvetica;
+    font-size:14px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px 0px #ccc; 
+}
+.courses tr {
+    border: 1px solid #ccc;
+}
+.courses tr:first-of-type{
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.courses td {
+    text-align: center;
+    padding: 10px;
+}
+.courses tr td:first-of-type{
+    text-align: left;
+}
+.courses .tech-icons div {
+    width: calc(100%);
+    background-color: #262626;
+    height: calc(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech-icons {
+    width: calc(50% - 60px);
+    height: 100%;
+    display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    grid-template-rows: calc(50% - 15px) calc(50% - 15px);
+    gap: 30px 30px
+}
+.tech-icons img {
+    height: 65%;
+}
+.tech-icons div:last-child {
+    background-color: #4decff;
+}

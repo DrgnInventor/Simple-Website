@@ -1,0 +1,124 @@
+<html>
+    <script src="main.js"></script>
+<head>
+    <title>Datorium Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web<span>Tech</span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a onclick ="goToSignUpForm">Sign Up</a>
+            <a href="https://www.datorium.eu/">Datorium</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="top-section">
+        <div class="features">
+            <div>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3616/3616913.svg">
+                <h1>Learn Web Development</h1>
+            </div>
+            <div>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3617/3617084.svg">
+                <h1>Live Sessions</h1>
+            </div>
+            <div>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3616/3616700.svg">
+                <h1>Discord Community</h1>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="description">
+            <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <div>
+                <h1>Learn Web Development</h1>
+                <p>Learn about the three base languages used in web development - <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> - and how to use the three of them together to create an interactive web application.</p>
+                <h1>Live Sessions</h1>
+                <p>Regular <span>live sessions</span> where you will be guided through the creation of your first web projects.</p>
+                <h1>Discord Community</h1>
+                <p>Join a community of over <span>300 students</span> learning to code. Participate in contests and help each other with solving difficult coding problems.</p>
+            </div>
+        </div>
+
+        <div class="signup">
+        <form>
+                <form>
+                    <label for="signup-name">Full Name</label><br>
+                    <input type="text" id="signup-name" placeholder="Enter your name..."><br><br>
+    
+                    <label>Programming Experience</label><br>
+                    <input type="radio" id="signup-no-exp" name="experience" >
+                    <label for="signup-no-exp"  class="radio-label">None</label><br>
+                    <input type="radio" id="signup-frontend-exp" name="experience">
+                    <label for="signup-frontend-exp"  class="radio-label">Frontend</label><br>
+                    <input type="radio" id="signup-other-exp" name="experience">
+                    <label for="signup-other-exp"  class="radio-label">Other</label><br><br>
+                    <label for="stupid">How Stupid are you ?</label><br>
+                    <input type="range" name= "stupid" id="stupid" min="1" step = "1" max="10"> <br>
+                    <label for="signup-email">Email</label><br>
+                    <input type="email" placeholder="youremail@email.xyz" id="signup-email">
+                    <input type="submit" value="Submit">
+                </form>
+        </form>
+
+        </div>
+        <div class="courses">
+            <div class = "tech-icons">
+                    <div><img src = "https://seeklogo.com/images/H/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png"></div>
+                    <div><img src = "https://seeklogo.net/wp-content/uploads/2014/11/CSS3-logo-vector.png"></div>
+                    <div><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Badge_js-strict.svg/325px-Badge_js-strict.svg.png"></div>
+                    <div><img src = "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"></div>
+    
+            </div>
+                <table >
+                    <tr>
+                        <td></td>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                        <td>Pro</td>
+                    </tr>
+                    <tr>
+                        <td>HTML & CSS</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>No</td>
+                        <td>yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Lenght</td>
+                        <td>3 Months</td>
+                        <td>4 Months</td>
+                        <td>2 Motnhs</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>60x3</td>
+                        <td>80x4</td>
+                        <td>80x2</td>
+                    </tr>
+                </table>
+        </div>
+    </main>
+    <footer>
+        <span class="contact">webtech@gmail.com | +3718989898</span>
+    </footer>
+</body>
+</html>
+
